@@ -19,6 +19,6 @@ export const CardList = styled.div`
 `;
 
 export const ErrorMessage = styled.p`
-  color: #dc2626;
+  color: var(--color-error);
   padding: 16px 0;
 `;

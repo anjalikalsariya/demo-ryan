@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 
 const shimmerBg = `
-  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background: linear-gradient(90deg, var(--color-secondary-hover) 25%, var(--color-secondary) 50%, var(--color-secondary-hover) 75%);
   background-size: 800px 100%;
   animation: shimmer 1.4s ease-in-out infinite;
 `;
 
 export const SkeletonCard = styled.div`
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--color-white);
+  border: 1px solid var(--color-secondary-hover);
   border-radius: 12px;
   padding: 6px 20px;
   margin-bottom: 12px;
@@ -78,7 +78,7 @@ export const SkeletonProgressRow = styled.div`
 export const SkeletonSection = styled.div<{ compact?: boolean }>`
   flex: ${({ compact }) => (compact ? "0 0 auto" : "1")};
   padding: 0 14px;
-  border-right: 1px solid #e5e7eb;
+  border-right: 1px solid var(--color-secondary-hover);
   display: flex;
   align-items: center;
   gap: 10px;
